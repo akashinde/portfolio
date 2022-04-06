@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cd73b910.css",
-    "main.js": "/portfolio/static/js/main.56d13958.js",
+    "main.js": "/portfolio/static/js/main.76c0629f.js",
+    "static/media/profile_photo.jpeg": "/portfolio/static/media/profile_photo.a2d522f4ff2e3f53477b.jpeg",
+    "static/media/Akash_Shinde_CV.pdf": "/portfolio/static/media/Akash_Shinde_CV.fbcc1ee898392cc1b402.pdf",
     "index.html": "/portfolio/index.html",
     "main.cd73b910.css.map": "/portfolio/static/css/main.cd73b910.css.map",
-    "main.56d13958.js.map": "/portfolio/static/js/main.56d13958.js.map"
+    "main.76c0629f.js.map": "/portfolio/static/js/main.76c0629f.js.map"
   },
   "entrypoints": [
     "static/css/main.cd73b910.css",
-    "static/js/main.56d13958.js"
+    "static/js/main.76c0629f.js"
   ]
 }
