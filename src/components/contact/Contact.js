@@ -3,25 +3,49 @@ import { RiPhoneLine, RiMailSendLine, RiUserLocationLine, RiSendPlaneFill } from
 
 import emailjs from 'emailjs-com'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
 
-    const [state, setState] = useState({})
+    const initialState = {
+        fullName: '', 
+        email: '', 
+        project: '', 
+        message: ''
+    }
+
+    const [form, setForm] = useState(initialState)
 
     const handleChange = (e) => {
-        setState({...state, [e.target.name]: e.target.value})
+        setForm({...form, [e.target.name]: e.target.value})
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_kprh7t8', 'template_hohe93o', e.target, 'Zek2MgafFbdrveFvJ')
-        .then((result) => {
-            console.log(result.text)
-        }, (error) => {
-            console.log(error)
-        });
-        e.target.reset();
-    }
 
+        const serviceId = process.env.REACT_APP_SERVICE_ID
+        const templateId = process.env.REACT_APP_TEMPLATE_ID
+        const apiKey = process.env.REACT_APP_API_KEY
+
+        const response = emailjs.sendForm(serviceId, templateId, e.target, apiKey)
+        // .then((result) => {
+        //     notify()
+        //     console.log(result.text)
+        // }, (error) => {
+        //     console.log(error)
+        // });
+        toast.promise(
+            response,
+            {
+              pending: 'Sending...',
+              success: 'Message Sent',
+              error: 'Something Went Wrong'
+            }
+        )
+        setForm(initialState)
+    }
+    
     return (
         <div id="contact" className="main">
             <div className="contact-container">
@@ -45,18 +69,31 @@ const Contact = () => {
                     </div>
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <div>
-                            <input name="fullName" className="form-component" type="text" placeholder="Name" value={state.fullName} onChange={handleChange} />
-                            <input name="email" className="form-component" type="email" placeholder="Email" value={state.email} onChange={handleChange}  />
+                            <input name="fullName" className="form-component" type="text" placeholder="Name" value={form.fullName} onChange={handleChange} />
+                            <input name="email" className="form-component" type="email" placeholder="Email" value={form.email} onChange={handleChange}  />
                         </div>
 
-                        <input name="project" className="form-component" type="text" placeholder="Project" value={state.project} onChange={handleChange} />
-                        <textarea name="message" className="form-component" type="text" placeholder="Message" rows="4" cols="50" value={state.message} onChange={handleChange} />
+                        <input name="project" className="form-component" type="text" placeholder="Project" value={form.project} onChange={handleChange} />
+                        <textarea name="message" className="form-component" type="text" placeholder="Message" rows="4" cols="50" value={form.message} onChange={handleChange} />
                         <button className="submit-button">
                             Send Message
                             <span style={{marginLeft: '5px'}}><RiSendPlaneFill size={'20px'} style={{position:'absolute'}} /></span>    
                         </button>
                     </form>
                 </div>
+
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={3000}
+                    hideProgressBar={true}
+                    closeOnClick={false}
+                    rtl={false}
+                    pauseOnFocusLoss={false}
+                    draggable={false}
+                    pauseOnHover={false}
+                    theme={'dark'}
+                />
+
             </div>
         </div>
     );

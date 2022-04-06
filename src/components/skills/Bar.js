@@ -3,9 +3,6 @@ import { useState } from "react";
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import FadeIn from 'react-fade-in';
 
-import Language from "./Languages";
-
-
 const Bar = ({title, period, languages}) => {
     
     const [drop, setDrop] = useState(false)
@@ -37,6 +34,20 @@ const Bar = ({title, period, languages}) => {
                 </FadeIn>
             </div>
             }
+        </div>
+    );
+}
+
+const Language = ({name, percentage}) => {
+    return (
+        <div>
+            <div className="language-head">
+                <p>{name}</p>
+                <p>{percentage}</p>
+            </div>
+            <div className="progress-bar">
+                <div style={{width: percentage}} className="progress-fill"></div>
+            </div>
         </div>
     );
 }

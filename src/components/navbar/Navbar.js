@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 
 import { Link } from "react-scroll"
 import Fade from 'react-reveal/Fade'
@@ -26,12 +26,12 @@ const Navbar = () => {
 
                 <div className="navbar-footer">
                     <span>
-                        <a href="https://www.linkedin.com/in/akashinde/" target="_blank" >
+                        <a href={process.env.REACT_APP_LINKED_IN} target="_blank" >
                             <AiOutlineLinkedin size={'25px'} />
                         </a>
                     </span>
                     <span>
-                        <a href="https://github.com/akashinde" target="_blank" >
+                        <a href={process.env.REACT_APP_GITHUB} target="_blank" >
                             <AiOutlineGithub size={'25px'} />   
                         </a>
                     </span>

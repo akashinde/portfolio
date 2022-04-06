@@ -1,5 +1,3 @@
-import Numbers from "./Numbers";
-
 import { RiDownload2Fill } from 'react-icons/ri'
 
 const About = () => {
@@ -30,6 +28,15 @@ const About = () => {
                     </button>
                 </a>
             </div>
+        </div>
+    );
+}
+
+const Numbers = ({ number, text }) => {
+    return (
+        <div style={{ width: '100px' }}>
+            <p style={{ fontSize: '30px', margin: 0}}>{number}</p>
+            <p>{text}</p>
         </div>
     );
 }
