@@ -33,7 +33,7 @@ const Home = () => {
                             width < 1024 ? (
                                 <>
                                 <div className="profile-photo">
-                                    <img src="/profile_photo.jpeg" alt="profile photo" />
+                                    <img src={require("../../files/profile_photo.jpeg")} alt="profile photo" />
                                 </div>
                                 <div className="navbar-footer2">
                                     <span>
@@ -50,7 +50,7 @@ const Home = () => {
                                 </>
                             ) : (
                                 <div className="profile-photo">
-                                    <img src="/profile_photo.jpeg" alt="profile photo" />
+                                    <img src={require("../../files/profile_photo.jpeg")} alt="profile photo" />
                                 </div>
                             )
                         }
