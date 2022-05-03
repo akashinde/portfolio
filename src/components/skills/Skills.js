@@ -86,10 +86,10 @@ const Skills = () => {
                     </span>
                 </div>
                 <div className="bar-container">
-                    <Bar title={"Frontend"} period={"More than 2 years"} languages={frontend}/>
-                    <Bar title={"Backend"} period={"More than 1 year"} languages={backend}/>
-                    <Bar title={"Database"} period={"More than 2 years"} languages={database}/>
-                    <Bar title={"Infra"} period={"More than 1 year"} languages={infra}/>
+                    <Bar title={"Frontend"} languages={frontend}/>
+                    <Bar title={"Backend"} languages={backend}/>
+                    <Bar title={"Database"} languages={database}/>
+                    <Bar title={"Infra"} languages={infra}/>
                     <Bar title={"Blockchain"} languages={blockchain}/>
                 </div>
             </div>

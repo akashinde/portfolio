@@ -7,6 +7,7 @@ import Navbar2 from './components/navbar/Navbar2';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects'
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact'
 
@@ -21,6 +22,7 @@ function App() {
           <Home />
           <About />
           <Skills />
+          <Projects />
           <Services />
           <Contact />
         </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import FadeIn from 'react-fade-in';
 
-const Bar = ({title, period, languages}) => {
+const Bar = ({title, languages}) => {
     
     const [drop, setDrop] = useState(false)
 
@@ -16,7 +16,6 @@ const Bar = ({title, period, languages}) => {
             <div className="bar-head">
                 <div>
                     <p style={{ marginBottom:'10px', fontSize: '25px'}}>{title}</p>
-                    <p style={{ opacity: '70%', margin: 0}}>{period}</p>
                 </div>
                 <button onClick={handleClick}>
                     <span>

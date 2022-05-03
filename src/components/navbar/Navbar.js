@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 
 import { RiHome3Fill, RiInformationFill, RiBarChartHorizontalLine, RiCodeSSlashFill, RiContactsFill } from 'react-icons/ri'
 
-import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineProject } from 'react-icons/ai'
 
 const Navbar = () => {
     return (
@@ -17,11 +17,13 @@ const Navbar = () => {
                 </div>
 
                 <ul className="navbar-list">
-                    <Item to={"home"} cls={'active'} component={<RiHome3Fill className="navbar-items" size={'35px'} />} />
-                    <Item to={"about"} component={<RiInformationFill className="navbar-items" size={'35px'} />} />
-                    <Item to={"skills"} component={<RiBarChartHorizontalLine className="navbar-items" size={'35px'} />} />
-                    <Item to={"services"} component={<RiCodeSSlashFill className="navbar-items" size={'35px'} />} />
-                    <Item to={"contact"} component={<RiContactsFill className="navbar-items" size={'35px'} />} />
+                    <Item to={"home"} cls={'active'} component={<RiHome3Fill title="Home" className="navbar-items" size={'35px'} />} />
+                    <Item to={"about"} component={<RiInformationFill title="About Me" className="navbar-items" size={'35px'} />} />
+                    <Item to={"skills"} component={<RiBarChartHorizontalLine title="Skills" className="navbar-items" size={'35px'} />} />
+                    <Item to={"projects"} component={<AiOutlineProject title="Projects" className="navbar-items" size={'35px'} />} />
+                    <Item to={"services"} component={<RiCodeSSlashFill title="Services" className="navbar-items" size={'35px'} />} />
+                    <Item to={"contact"} component={<RiContactsFill title="Contact Me" className="navbar-items" size={'35px'} />} />
+                
                 </ul>
 
                 <div className="navbar-footer">
