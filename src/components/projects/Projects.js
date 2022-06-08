@@ -30,8 +30,8 @@ const Projects = () => {
                     </span>
                 </div>
                 <div className="bar-container">
-                    <Card title={"Blockchain using Nodejs"} hrefLink={"https://github.com/akashinde/Blockchain_in_Nodejs"} />
-                    <Card title={"Identity Management System using Blockchain"} hrefLink={"https://github.com/akashinde/Blockchain_in_Nodejshttps://github.com/akashinde/ManageiD"} />
+                    <Card title={"Blockchain using Nodejs"} hrefLink={"https://www.linkedin.com/posts/akashinde_javascript-github-nodejs-activity-6857984781465075712-kEyd?utm_source=linkedin_share&utm_medium=member_desktop_web"} />
+                    <Card title={"Identity Management System using Blockchain"} hrefLink={"https://github.com/akashinde/ManageiD"} />
                     <Card title={"Automated Car Parking System"} hrefLink={"https://www.linkedin.com/posts/akashinde_automationsolutions-raspberrypi-esp8266-activity-6787409979440799744-0syy?utm_source=linkedin_share&utm_medium=member_desktop_web"} />
                 </div>
             </div>
