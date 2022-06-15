@@ -21,7 +21,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <a href={require("../../files/Resume_Akash.pdf")} download="Akash_Shinde_CV" target='_blank'>
+                <a href={require("../../files/Resume_Akash.pdf")} download="Resume_Akash" target='_blank'>
                     <button className="cv-button">
                         Download CV
                         <span style={{ marginLeft: '10px' }}><RiDownload2Fill size={'20px'} style={{ position: 'absolute' }} /></span>
