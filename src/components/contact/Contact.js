@@ -58,13 +58,13 @@ const Contact = () => {
                 <div className="contact-body">
                     <div className="contact-details">
                         <div className="details-container">
-                            <Details title={"Call Me"} info={"+91 86918 59293"} component={<RiPhoneLine size={'40px'} />} />
+                            <Details title={"Call Me"} info={"+49 015510 440645"} component={<RiPhoneLine size={'40px'} />} />
                         </div>
                         <div className="details-container">
                             <Details title={"Email"} info={"shinde10akash@outlook.com"} component={<RiMailSendLine size={'40px'} />} />
                         </div>
                         <div className="details-container">
-                            <Details title={"Location"} info={"Mumbai, 400104"} component={<RiUserLocationLine size={'40px'} />} />
+                            <Details title={"Location"} info={"Germany, 60529"} component={<RiUserLocationLine size={'40px'} />} />
                         </div>
                     </div>
                     <form className="contact-form" onSubmit={handleSubmit}>
