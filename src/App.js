@@ -23,7 +23,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          <Services />
+          {/* <Services /> */}
           <Contact />
         </div>
 

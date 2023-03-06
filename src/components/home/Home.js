@@ -18,9 +18,9 @@ const Home = () => {
                         <Fade>
                             <p className="title">Hey, I'm Akash</p>
                             <p className="sub-title">Web Developer</p>
-                            <p className="description">A developer building delightfully awesome things. You can find out more about me, have a look at some things I've built.</p>
+                            <p className="description">A developer building delightfully awesome things. Find more about me below!</p>
                             
-                            <Mailto email={process.env.REACT_APP_EMAIL_ID} subject="Pinging" body="Hey Akash, ...">
+                            <Mailto email={process.env.REACT_APP_EMAIL_ID} subject="<Your Subject>" body="Hey Akash, ...">
                                 <button className="ping-me-button">
                                     Ping me
                                 </button>
@@ -33,7 +33,7 @@ const Home = () => {
                             width < 1024 ? (
                                 <>
                                 <div className="profile-photo">
-                                    <img src={require("../../files/profile_photo.jpeg")} alt="profile photo" />
+                                    <img src={require("../../files/profile_photo.jpg")} alt="profile photo" />
                                 </div>
                                 <div className="navbar-footer2">
                                     <span>
@@ -50,7 +50,7 @@ const Home = () => {
                                 </>
                             ) : (
                                 <div className="profile-photo">
-                                    <img src={require("../../files/profile_photo.jpeg")} alt="profile photo" />
+                                    <img src={require("../../files/profile_photo.jpg")} alt="profile photo" />
                                 </div>
                             )
                         }

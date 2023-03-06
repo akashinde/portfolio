@@ -237,6 +237,10 @@ a:hover {
     width: 40%;
   }
 
+  .desc-container {
+    flex-direction: column;
+  }
+
   .navbar-footer2 {
     position: absolute;
     overflow: hidden;
@@ -310,9 +314,9 @@ a:hover {
 }
 
 .about-desc {
-  font-size: 1em;
-  opacity: 80%;
-  /* margin-top: 50px; */
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 10px;
 }
 
 .about-container {
@@ -334,7 +338,9 @@ a:hover {
 }
 
 .count-container {
-  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;

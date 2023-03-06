@@ -21,7 +21,7 @@ const Navbar = () => {
                     <Item to={"about"} component={<RiInformationFill title="About Me" className="navbar-items" size={'35px'} />} />
                     <Item to={"skills"} component={<RiBarChartHorizontalLine title="Skills" className="navbar-items" size={'35px'} />} />
                     <Item to={"projects"} component={<AiOutlineProject title="Projects" className="navbar-items" size={'35px'} />} />
-                    <Item to={"services"} component={<RiCodeSSlashFill title="Services" className="navbar-items" size={'35px'} />} />
+                    {/* <Item to={"services"} component={<RiCodeSSlashFill title="Services" className="navbar-items" size={'35px'} />} /> */}
                     <Item to={"contact"} component={<RiContactsFill title="Contact Me" className="navbar-items" size={'35px'} />} />
                 
                 </ul>

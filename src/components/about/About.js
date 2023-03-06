@@ -6,22 +6,20 @@ const About = () => {
             <div className="about-container">
                 <div className="about-title">
                     <span>
-                        My Introduction
+                        About Me
                     </span>
                 </div>
                 <div className="desc-container">
-                    <div style={{ textAlign: 'center' }}>
                         <p className="about-desc">
-                            Experience with microservice architecture and designing API solutions for backend services. With a practical background, I am a highly motivated and productive developer. Detail-oriented with great multi-tasking and day-to-day task management abilities. Strong interpersonal abilities to create and maintain good professional connections with coworkers and clients.
+                        With more than 1.5 years of experience as a software developer, and my area of expertise is developing and deploying robust and scalable product-based solutions. I have a solid background in building integration tests, Docker, REST-APIs, and Frontend. I have a strong will to succeed, a flexible and creative attitude, and an organized and independent work style. These qualities combine with my great communication and presentation abilities to allow me to work well with the team.
                         </p>
                         <div className="count-container">
-                            <Numbers number={"01+"} text={"Years of Experience"} />
-                            <Numbers number={"02+"} text={"Projects Completed"} />
-                            <Numbers number={"01"} text={"Companies Worked"} />
+                            <Numbers number={"1.5+"} text={"Years of Experience"} />
+                            <Numbers number={"03+"} text={"Projects Completed"} />
+                            <Numbers number={"02"} text={"Companies Worked"} />
                         </div>
-                    </div>
                 </div>
-                <a href={require("../../files/Resume_Akash.pdf")} download="Resume_Akash" target='_blank'>
+                <a href={require("../../files/resume.pdf")} download="Resume_Akash" target='_blank'>
                     <button className="cv-button">
                         Download CV
                         <span style={{ marginLeft: '10px' }}><RiDownload2Fill size={'20px'} style={{ position: 'absolute' }} /></span>
