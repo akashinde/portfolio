@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { RiArrowDropDownLine } from 'react-icons/ri'
-import FadeIn from 'react-fade-in';
+import Fade from 'react-fade-in';
 
 const Bar = ({title, languages}) => {
     
@@ -13,24 +13,20 @@ const Bar = ({title, languages}) => {
 
     return (
         <div>
-            <div className="bar-head">
+            <div className="bar-head" onClick={handleClick}>
                 <div>
-                    <p style={{ marginBottom:'10px', fontSize: '25px'}}>{title}</p>
+                    <p style={{ fontSize: '25px'}}>{title}</p>
                 </div>
-                <button onClick={handleClick}>
-                    <span>
-                        <RiArrowDropDownLine size={'50px'} style={{position:'absolute'}} />
-                    </span>
-                </button>
+                <RiArrowDropDownLine size={'50px'} />
             </div>
             {
             drop && 
             <div className="bar-content">
-                <FadeIn>
+                <Fade>
                 {
                     languages.map(i => <Language name={i.name} percentage={i.percent} />)
                 }
-                </FadeIn>
+                </Fade>
             </div>
             }
         </div>

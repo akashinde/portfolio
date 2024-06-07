@@ -43,17 +43,24 @@
 }
 
 .status {
-  display: none;
+  display: block;
 }
 
 .status h3 {
+  border: 2px solid #0a0516;
+  padding: 10px;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   animation-name: status-animation;
   animation-duration: 1.8s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  cursor: pointer;
+}
+
+.status h3:hover {
+  color: #ffffff90;
 }
 
 .hamburger-container {
@@ -61,7 +68,7 @@
 }
 
 .main-container {
-  height: 100%;
+  min-height: 100vh;
   width: 80%;
 }
 
@@ -131,10 +138,8 @@ a:hover {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
   padding: 0;
-  width: 80%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -142,28 +147,29 @@ a:hover {
 }
 
 .intro {
-  margin: 0;
+  padding-left: 300px;
 }
 
 .title {
-  font-size: 50px;
+  font-size: 80px;
   margin: 0;
 }
 
 .sub-title {
-  font-size: 25px;
+  font-size: 40px;
+  font-style: italic;
   margin-top: 10px;
-  opacity: 75%;
+  color: #ffffff90;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 30px;
   margin: 0;
 }
 
 .profile-photo {
-  margin: 20px;
-  width: 100%;
+  /* margin: 20px; */
+  /* width: 50%; */
   clip-path: circle(35% at 35% 45%);
 }
 
@@ -173,7 +179,6 @@ a:hover {
 
 .ping-me-button {
   font-size: 20px;
-  font-family: 'Comfortaa', cursive;
   margin-top: 40px;
   padding: 15px;
   padding-top: 20px;
@@ -198,7 +203,7 @@ a:hover {
   }
 
   .status2 {
-    display: none;
+    display: block;
     text-align: center;
     margin-top: 20px;
   }
@@ -307,19 +312,41 @@ a:hover {
 
 }
 
+.up-button {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.up-button:hover {
+  color: #9b84da;
+}
+
+.down-button {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.down-button:hover {
+  color: #9b84da;
+}
+
 /* About Page */
 
 .about-title span {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .about-desc {
-  font-size: 1.2em;
+  font-size: 30px;
   line-height: 1.5em;
-  margin: 10px;
+  width: 50%;
+  text-align: start;
 }
 
 .about-container {
+  position: relative;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -335,27 +362,29 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5%;
 }
 
 .count-container {
   padding: 20px;
-  border: 1px solid whitesmoke;
+  border: 2px solid whitesmoke;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  flex-direction: column;
 }
 
 .cv-button {
-  width: 200px;
-  font-size: 18px;
-  font-family: 'Comfortaa', cursive;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  text-decoration: none;
   padding: 12px;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  outline: none;
   transition: all 0.3s ease 0s;
   background-color: #9b84da;
   cursor: pointer;
@@ -369,6 +398,7 @@ a:hover {
 /* Skills Page */
 
 .skills-container {
+  position: relative;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -384,7 +414,7 @@ a:hover {
 
 
 .skills-title span {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .bar-container {
@@ -400,10 +430,10 @@ a:hover {
 .bar-head {
   width: 300px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #0a0516;
-  padding-left: 15px;
-  padding-bottom: 15px;
+  padding-left: 20px;
   border-radius: 8px;
 }
 
@@ -432,6 +462,7 @@ a:hover {
 .language-head {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 .progress-bar {
@@ -449,6 +480,7 @@ a:hover {
 /* Projects */
 
 .projects-container {
+  position: relative;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -464,7 +496,7 @@ a:hover {
 
 
 .projects-title span {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 /* Services */
@@ -497,8 +529,8 @@ a:hover {
 }
 
 .card-body {
-  height: 230px;
-  width: 200px;
+  min-height: 25vh;
+  width: 20%;
   background-color: #0a0516;
   border-radius: 10px;
   color: #fff;
@@ -519,8 +551,9 @@ a:hover {
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 30px;
+  color: #9b84da;
 }
 
 .card-button {
@@ -540,9 +573,9 @@ a:hover {
 /* Contact */
 
 .contact-container {
+  position: relative;
   margin: 0;
   padding: 0;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -555,7 +588,7 @@ a:hover {
 }
 
 .contact-title span {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .contact-body {
@@ -568,11 +601,9 @@ a:hover {
 }
 
 .contact-details {
-  width: 100%;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  height: 300px;
   border-radius: 10px;
   background-color: #0a051656;
 }
@@ -588,7 +619,7 @@ a:hover {
 }
 
 .contact-form {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
@@ -596,7 +627,6 @@ a:hover {
 .form-component {
   background-color: #0a0516;
   color: #9b84da;
-  font-family: 'Comfortaa', cursive;
   margin: 10px;
   padding-left: 10px;
   padding-top: 10px;
@@ -622,12 +652,10 @@ textarea:focus{
 }
 
 .submit-button {
-  margin-top: 20px;
-  margin-left: 10px;
   width: 50%;
-  font-size: 18px;
-  font-family: 'Comfortaa', cursive;
-  padding: 12px;
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 15px;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -638,6 +666,7 @@ textarea:focus{
 }
 
 .submit-button:hover {
+  width: 95%;
   box-shadow: 0px 10px 20px #00000083;
   transform: translateY(-5px);
 }
