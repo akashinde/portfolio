@@ -1,8 +1,7 @@
 import { Fragment } from "react";
-
-import Fade from 'react-reveal/Fade'
-
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import Fade from 'react-reveal/Fade'
+import UpDownButton from "../UpDownButton";
 
 import useWindowDimensions from '../useWindowDimensions'
 
@@ -16,9 +15,9 @@ const Home = () => {
                 <div className="container">
                     <div className="intro">
                         <Fade>
-                            <p className="title">Hey, I'm Akash</p>
-                            <p className="sub-title">Web Developer</p>
-                            <p className="description">A developer building delightfully awesome things. Find more about me below!</p>
+                            <p className="title">Hello, <br/> I'm Akash</p>
+                            <p className="sub-title">Software Engineer</p>
+                            <p className="description">Transforming ideas into interactive experiences. Find more about me below!</p>
                             
                             <Mailto email={process.env.REACT_APP_EMAIL_ID} subject="<Your Subject>" body="Hey Akash, ...">
                                 <button className="ping-me-button">
@@ -55,6 +54,7 @@ const Home = () => {
                             )
                         }
                     </Fade>
+                    <UpDownButton to={"about"} />
                 </div>
             </div>
         </Fragment>

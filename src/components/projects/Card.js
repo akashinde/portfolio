@@ -18,10 +18,10 @@ const Card = ({ title, hrefLink }) => {
                 <p className="card-title">{title}</p>
                 <div className="card-button">
                     <span onMouseEnter={handleEvent} onMouseLeave={handleEvent}>
-                        <a href={hrefLink} style={{color: 'white', textDecoration: 'none'}} target="_blank">
+                        <a href={hrefLink} style={{ fontSize: '20px', color: '#ffffff90', textDecoration: 'none'}} target="_blank">
                         Know More
                         </a>
-                        <RiArrowRightLine className="card-arrow" style={isShown && style} />
+                        <RiArrowRightLine size={'22px'} className="card-arrow" style={isShown && style} />
                     </span>
                 </div>
         </div>
