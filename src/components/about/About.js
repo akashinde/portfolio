@@ -27,7 +27,7 @@ const About = () => {
         <a
           className="cv-button"
           href={require("../../files/resume.pdf")}
-          download="Resume_Akash"
+          download="01_Shinde_Resume"
           target="_blank"
         >
           <span>Resume</span>
