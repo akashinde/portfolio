@@ -28,12 +28,12 @@ const Navbar = () => {
 
                 <div className="navbar-footer">
                     <span>
-                        <a href={process.env.REACT_APP_LINKED_IN} target="_blank" >
+                        <a href={"https://www.linkedin.com/in/akashinde"} target="_blank" >
                             <AiOutlineLinkedin size={'40px'} />
                         </a>
                     </span>
                     <span>
-                        <a href={process.env.REACT_APP_GITHUB} target="_blank" >
+                        <a href={"https://github.com/akashinde"} target="_blank" >
                             <AiOutlineGithub size={'40px'} />   
                         </a>
                     </span>

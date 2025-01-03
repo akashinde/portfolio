@@ -11,15 +11,15 @@ const About = () => {
         </div>
         <div className="desc-container">
           <p className="about-desc">
-            Pursuing Master’s in Computer Science while actively collaborating
-            in agile software development of safety-critical digital solutions
-            for more than 2 years. Specialized in implementing robust and
-            scalable solutions with a strong foundation in the software
-            development lifecycle. Driven by a growth attitude and a strong
-            desire to stay ahead of the curve with a passion for learning.
+            I am a Full-Stack Engineer with over three years of experience in 
+            enhancing user experiences and building secure, scalable backend systems. 
+            I specialize in applying SOLID principles to create effective insurance 
+            and financial applications and am passionate about test-driven development 
+            and automating tasks. I enjoy learning new technologies, driving innovative 
+            projects, and contributing to open-source communities.
           </p>
           <div className="count-container">
-            <Numbers number={"2.5+"} text={"Years of Experience"} />
+            <Numbers number={"3+"} text={"Years of Experience"} />
             <Numbers number={"10+"} text={"Projects Completed"} />
             <Numbers number={"03"} text={"Companies Worked"} />
           </div>
@@ -27,10 +27,10 @@ const About = () => {
         <a
           className="cv-button"
           href={require("../../files/resume.pdf")}
-          download="01_Shinde_Resume"
+          download="01_Resume_Shinde"
           target="_blank"
         >
-          <span>Resume</span>
+          <span>Download Resume</span>
           <RiDownload2Fill size={"30px"} />
         </a>
         <UpDownButton to={"skills"}></UpDownButton>

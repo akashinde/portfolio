@@ -15,11 +15,11 @@ const Home = () => {
                 <div className="container">
                     <div className="intro">
                         <Fade>
-                            <p className="title">Hello, <br/> I'm Akash</p>
-                            <p className="sub-title">Software Engineer</p>
-                            <p className="description">Transforming ideas into interactive experiences. Find more about me below!</p>
+                            <p className="title">Akash Shinde</p>
+                            <p className="sub-title">Full Stack Engineer</p>
+                            <p className="description">I transform ideas into interactive experiences.</p>
                             
-                            <Mailto email={process.env.REACT_APP_EMAIL_ID} subject="<Your Subject>" body="Hey Akash, ...">
+                            <Mailto email={process.env.REACT_APP_EMAIL_ID} subject="<Your Subject>" body="Hi Akash, ...">
                                 <button className="ping-me-button">
                                     Ping me
                                 </button>
